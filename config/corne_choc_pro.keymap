@@ -27,17 +27,17 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q           &kp W           &kp E             &kp R               &kp T        &kp C_BRI_UP  &kp C_VOL_UP  &kp Y        &kp U                &kp I              &kp O            &kp P               &trans
-&trans  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_CONTROL F  &kp G        &kp C_BRI_DN  &kp C_VOL_DN  &kp H        &mt RIGHT_CONTROL J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI  &trans
-&trans  &kp Z           &kp X           &kp C             &kp V               &kp B                                    &kp N        &kp M                &kp COMMA          &kp DOT          &kp FSLH            &trans
-                                        &mo 3             &kp BACKSPACE       &lt 1 SPACE                              &lt 2 ENTER  &kp ESC              &kp TAB
+&trans  &kp Q           &kp W           &kp E             &kp R               &kp T        &kp C_BRI_UP  &kp K_VOLUME_UP           &kp Y        &kp U                &kp I              &kp O            &kp P               &trans
+&trans  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_CONTROL F  &kp G        &kp C_BRI_DN  &mt K_MUTE K_VOLUME_DOWN  &kp H        &mt RIGHT_CONTROL J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI  &trans
+&trans  &kp Z           &kp X           &kp C             &kp V               &kp B                                                &kp N        &kp M                &kp COMMA          &kp DOT          &kp FSLH            &trans
+                                        &mo 3             &kp BACKSPACE       &lt 1 SPACE                                          &lt 2 ENTER  &lt 1 ESC            &kp TAB
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
         };
 
         lower_layer {
-            display-name = "NAVIGATION";
+            display-name = "NUM";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5    |  LCTRL | RCTRL |  6  |  7  |  8  |  9  |  0  | BSPC |
@@ -46,10 +46,10 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &bt BT_SEL 0  &bt BT_SEL 1  &trans    &trans         &trans       &trans     &trans  &trans
-&trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &bt BT_SEL 2  &bt BT_SEL 3  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                              &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans  &trans
-                        &trans  &trans  &trans                              &trans    &trans         &trans
+&trans  &kp LBKT       &kp N7  &kp N8  &kp N9  &kp RBKT   &bt BT_SEL 0  &bt BT_SEL 1  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp SEMICOLON  &kp N4  &kp N5  &kp N6  &kp EQUAL  &bt BT_SEL 2  &bt BT_SEL 3  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp GRAVE      &kp N1  &kp N2  &kp N3  &kp BSLH                               &trans  &trans  &trans  &trans  &trans  &trans
+                               &trans  &kp N0  &trans                                 &trans  &trans  &trans
             >;
         };
 
