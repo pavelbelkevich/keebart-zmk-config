@@ -27,10 +27,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q           &kp W           &kp E             &kp R               &kp T        &kp C_BRI_UP  &kp K_VOLUME_UP           &kp Y        &kp U                &kp I              &kp O            &kp P               &trans
-&trans  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_CONTROL F  &kp G        &kp C_BRI_DN  &mt K_MUTE K_VOLUME_DOWN  &kp H        &mt RIGHT_CONTROL J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI  &trans
-&trans  &kp Z           &kp X           &kp C             &kp V               &kp B                                                &kp N        &kp M                &kp COMMA          &kp DOT          &kp FSLH            &trans
-                                        &mo 4             &kp BACKSPACE       &lt 1 SPACE                                          &lt 3 ENTER  &lt 1 ESC            &kp TAB
+&trans  &kp Q           &kp W           &kp E             &kp R               &kp T      &kp C_BRI_UP  &kp K_VOLUME_UP           &kp Y        &kp U                &kp I              &kp O            &kp P                    &trans
+&trans  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_CONTROL F  &kp G      &kp C_BRI_DN  &mt K_MUTE K_VOLUME_DOWN  &kp H        &mt RIGHT_CONTROL J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMICOLON  &trans
+&trans  &kp Z           &kp X           &kp C             &kp V               &kp B                                              &kp N        &kp M                &kp COMMA          &kp DOT          &kp SLASH                &trans
+                                        &lt 5 ESCAPE      &lt 2 SPACE         &lt 4 TAB                                          &lt 3 ENTER  &lt 1 BACKSPACE      &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
@@ -49,22 +49,12 @@
 &trans  &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET  &bt BT_SEL 0  &bt BT_SEL 1  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp SEMICOLON     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL          &bt BT_SEL 2  &bt BT_SEL 3  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH                                  &trans  &trans  &trans  &trans  &trans  &trans
-                                        &trans        &kp NUMBER_0  &trans                                         &trans  &trans  &trans
-            >;
-        };
-
-        layer_9 {
-            display-name = "NUM";
-            bindings = <
-&trans  &kp LEFT_BRACE  &kp N7  &kp N8  &kp N9  &kp RIGHT_BRACE  &bt BT_SEL 0  &bt BT_SEL 1  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp SEMICOLON   &kp N4  &kp N5  &kp N6  &kp EQUAL        &bt BT_SEL 2  &bt BT_SEL 3  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp GRAVE       &kp N1  &kp N2  &kp N3  &kp BSLH                                     &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans  &kp N0  &trans                                       &trans  &trans  &trans
+                                        &kp PERIOD    &kp NUMBER_0  &kp MINUS                                      &trans  &trans  &trans
             >;
         };
 
         raise_layer {
-            display-name = "SYMBOL";
+            display-name = "NAV";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  | LCTRL | RCTRL |  ^  |  &  |  *  |  (  |  )  | BSPC |
@@ -73,10 +63,20 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &trans  &kp RCTRL  &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &trans
-&trans  &trans    &trans  &trans    &trans    &trans     &trans  &kp RALT   &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &trans
-&trans  &trans    &trans  &trans    &trans    &trans                        &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &trans
-                          &trans    &trans    &trans                        &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp K_REDO      &kp K_PASTE     &kp K_COPY    &kp K_CUT        &kp K_UNDO  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans      &trans
+                        &trans  &trans  &trans                  &trans          &trans          &trans
+            >;
+        };
+
+        extra_layer_0 {
+            display-name = "SYM";
+            bindings = <
+&trans  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE  &bt BT_SEL 0  &bt BT_SEL 1  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS         &bt BT_SEL 2  &bt BT_SEL 3  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE                                     &trans  &trans  &trans  &trans  &trans  &trans
+                                         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE                               &trans  &trans  &trans
             >;
         };
 
