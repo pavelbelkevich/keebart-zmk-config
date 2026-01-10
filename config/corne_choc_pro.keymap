@@ -34,7 +34,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <170>;
-            hold-trigger-key-positions = <5 4 3 2 15 16 17 18 19 29 30 31 32 33 1 3 4 5 17 18 19 31 32 33>;
+            hold-trigger-key-positions = <2 3 4 18 17 16 30 31 32 15 1 29 5 19 33>;
             hold-trigger-on-release;
             flavor = "tap-preferred";
             require-prior-idle-ms = <100>;
