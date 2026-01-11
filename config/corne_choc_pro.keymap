@@ -37,7 +37,7 @@
             hold-trigger-on-release;
             flavor = "tap-preferred";
             require-prior-idle-ms = <100>;
-            hold-trigger-key-positions = <1 2 3 4 5 15 16 17 18 19 29 30 31 32 33>;
+            hold-trigger-key-positions = <1 2 3 4 5 6 15 16 17 18 19 20 29 30 31 32 33 40 41 42>;
             quick-tap-ms = <150>;
         };
 
@@ -51,7 +51,7 @@
             hold-trigger-on-release;
             flavor = "tap-preferred";
             require-prior-idle-ms = <100>;
-            hold-trigger-key-positions = <8 9 10 11 12 22 23 24 25 26 34 35 36 37 38>;
+            hold-trigger-key-positions = <7 8 9 10 11 12 21 22 23 24 25 26 34 35 36 37 38 43 44 45>;
             quick-tap-ms = <150>;
         };
     };
