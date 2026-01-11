@@ -15,16 +15,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        Escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <23 24>;
-            layers = <0>;
-            timeout-ms = <25>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         hrr: hrr {
