@@ -37,6 +37,7 @@
             hold-trigger-on-release;
             flavor = "tap-preferred";
             require-prior-idle-ms = <100>;
+            hold-trigger-key-positions = <1 15 29 2 16 30 3 4 18 17 31 32>;
         };
 
         hrl: hrl {
@@ -49,6 +50,7 @@
             hold-trigger-on-release;
             flavor = "tap-preferred";
             require-prior-idle-ms = <100>;
+            hold-trigger-key-positions = <8 22 34 9 23 35 10 24 36 11 25 37 45>;
         };
     };
 
