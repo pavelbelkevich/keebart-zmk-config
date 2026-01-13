@@ -71,7 +71,7 @@
         hold_bt_clear: hold_bt_clear {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_BT_CLEAR";
-            bindings = <&bootloader>, <&none>;
+            bindings = <&bt>, <&none>;
 
             #binding-cells = <2>;
             flavor = "hold-preferred";
