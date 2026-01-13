@@ -45,16 +45,6 @@
             hold-trigger-key-positions = <7 8 9 10 11 12 21 22 23 24 25 26 34 35 36 37 38 43 44 45>;
             quick-tap-ms = <100>;
         };
-
-        btht: btht {
-            compatible = "zmk,behavior-hold-tap";
-            label = "BT Hold Tap";
-            bindings = <&bt>, <&bt>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <2000>;
-            flavor = "tap-preferred";
-        };
     };
 
     keymap {
@@ -134,10 +124,10 @@
         fun {
             display-name = "FUN";
             bindings = <
-&none  &sys_reset      &kp F7  &kp F8          &kp F9            &kp F12  &bt BT_SEL 0  &bt BT_SEL 1         &none  &none          &none            &none  &none  &none
-&none  &bootloader     &kp F4  &kp F5          &kp F6            &kp F11  &bt BT_SEL 2  &btht BT_CLR BT_NXT  &none  &kp RIGHT_GUI  &kp RIGHT_ALT    &none  &none  &none
-&none  &studio_unlock  &kp F1  &kp F2          &kp F3            &kp F10                                     &none  &none          &none            &none  &none  &none
-                               &kp LEFT_SHIFT  &kp LEFT_CONTROL  &none                                       &none  &none          &kp RIGHT_SHIFT
+&none  &sys_reset      &kp F7  &kp F8          &kp F9            &kp F12  &bt BT_SEL 0  &bt BT_SEL 1  &none  &none          &none            &none  &none  &none
+&none  &bootloader     &kp F4  &kp F5          &kp F6            &kp F11  &bt BT_SEL 2  &bt BT_CLR    &none  &kp RIGHT_GUI  &kp RIGHT_ALT    &none  &none  &none
+&none  &studio_unlock  &kp F1  &kp F2          &kp F3            &kp F10                              &none  &none          &none            &none  &none  &none
+                               &kp LEFT_SHIFT  &kp LEFT_CONTROL  &none                                &none  &none          &kp RIGHT_SHIFT
             >;
         };
     };
