@@ -82,10 +82,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W            &kp E                &kp R               &kp T         &none         &none            &kp Y      &kp U               &kp I                 &kp O             &kp P      &none
-&none  &kp A  &hrl LEFT_ALT S  &hrl LEFT_CONTROL D  &hrl RIGHT_SHIFT F  &kp G         &lt 4 DELETE  &lt 5 BACKSPACE  &kp H      &hrr RIGHT_SHIFT J  &hrr RIGHT_CONTROL K  &hrr RIGHT_ALT L  &kp ENTER  &none
-&none  &kp Z  &kp X            &kp C                &kp V               &kp B                                        &kp N      &kp M               &kp COMMA             &kp DOT           &kp SLASH  &none
-                               &kp LEFT_GUI         &kp SPACE           &lt 1 ESCAPE                                 &lt 2 TAB  &lt 3 BACKSPACE     &kp RIGHT_GUI
+&none  &kp Q            &kp W            &kp E                &kp R               &kp T      &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP           &kp Y         &kp U               &kp I                 &kp O             &kp P                 &none
+&none  &hrl LEFT_GUI A  &hrl LEFT_ALT S  &hrl LEFT_CONTROL D  &hrl RIGHT_SHIFT F  &kp G      &kp C_BRIGHTNESS_DEC  &mt C_MUTE C_VOLUME_DOWN  &kp H         &hrr RIGHT_SHIFT J  &hrr RIGHT_CONTROL K  &hrr RIGHT_ALT L  &hrr RIGHT_GUI ENTER  &none
+&none  &kp Z            &kp X            &kp C                &kp V               &kp B                                                      &kp N         &kp M               &kp COMMA             &kp DOT           &kp SLASH             &none
+                                         &kp BACKSPACE        &kp SPACE           &lt 1 TAB                                                  &lt 2 ESCAPE  &lt 3 BACKSPACE     &lt 4 DELETE
             >;
         };
 
@@ -99,10 +99,10 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&none  &none  &none         &none             &none           &none  &none  &none  &none           &none           &none          &none            &none      &none
-&none  &none  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none  &none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp ENTER  &none
-&none  &none  &none         &none             &none           &none                &none           &kp PAGE_DOWN   &kp PAGE_UP    &none            &none      &none
-                            &none             &none           &none                &kp TAB         &kp BACKSPACE   &kp RIGHT_GUI
+&none  &none         &none         &none             &none           &none  &none  &none  &none           &none           &none         &none            &none      &none
+&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none  &none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp ENTER  &none
+&none  &none         &none         &none             &none           &none                &none           &kp PAGE_DOWN   &kp PAGE_UP   &none            &none      &none
+                                   &none             &none           &none                &kp ESCAPE      &kp BACKSPACE   &kp DELETE
             >;
         };
 
@@ -116,10 +116,10 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-&none  &kp BACKSLASH  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &kp ASTERISK  &none  &none  &none  &none  &none              &none          &none  &none
-&none  &kp EQUAL      &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6  &kp COMMA     &none  &none  &none  &none  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &none  &none
-&none  &kp PLUS       &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp MINUS                   &none  &none  &none              &none          &none  &none
-                                    &kp RIGHT_GUI  &kp NUMBER_0  &kp ESCAPE                  &none  &none  &none
+&none  &kp BACKSLASH  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &none  &none  &none  &none            &none              &none          &none          &none
+&none  &kp EQUAL      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp COMMA     &none  &none  &none  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI  &none
+&none  &kp PLUS       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS                   &none  &none            &none              &none          &none          &none
+                                    &none         &kp NUMBER_0  &kp DOT                     &none  &none            &none
             >;
         };
 
@@ -127,29 +127,19 @@
             display-name = "SYM";
             bindings = <
 &none  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH              &kp DOLLAR      &kp PERCENT       &none  &none  &kp CARET          &kp AMPERSAND      &kp ASTERISK           &kp GRAVE         &kp TILDE     &none
-&none  &kp EQUAL        &kp SEMICOLON  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LEFT_BRACKET  &none  &none  &kp RIGHT_BRACKET  &kp RIGHT_BRACE    &kp RIGHT_PARENTHESIS  &kp COLON         &kp ENTER     &none
-&none  &kp PLUS         &kp PIPE       &kp UNDERSCORE        &kp BACKSLASH   &kp MINUS                       &kp SQT            &kp DOUBLE_QUOTES  &kp LESS_THAN          &kp GREATER_THAN  &kp QUESTION  &none
-                                       &none                 &kp SPACE       &kp ESCAPE                      &none              &none              &none
-            >;
-        };
-
-        media {
-            display-name = "MEDIA";
-            bindings = <
-&none  &none  &none  &none  &none  &none  &none  &rgb_ug RGB_TOG  &none           &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none       &none  &none
-&none  &none  &none  &none  &none  &none  &none  &out OUT_TOG     &kp C_PREVIOUS  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp C_NEXT  &none  &none
-&none  &none  &none  &none  &none  &none                          &none           &none                 &none                 &none       &none  &none
-                     &none  &none  &none                          &none           &kp C_MUTE            &kp C_PLAY_PAUSE
+&none  &kp EQUAL        &kp SEMICOLON  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp SINGLE_QUOTE  &none  &none  &kp DOUBLE_QUOTES  &kp RIGHT_BRACE    &kp RIGHT_PARENTHESIS  &kp COLON         &kp ENTER     &none
+&none  &kp PLUS         &kp PIPE       &kp UNDERSCORE        &kp BACKSLASH   &kp MINUS                       &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp LESS_THAN          &kp GREATER_THAN  &kp QUESTION  &none
+                                       &kp BACKSPACE         &kp SPACE       &kp TAB                         &none              &none              &none
             >;
         };
 
         fun {
             display-name = "FUN";
             bindings = <
-&none  &hold_reset 0 0  &kp F7  &kp F8        &kp F9  &kp F12     &bt BT_SEL 0  &bt BT_SEL 1  &none  &none            &none              &none          &none  &none
-&none  &hold_boot 0 0   &kp F4  &kp F5        &kp F6  &kp F11     &bt BT_SEL 2  &bt BT_CLR    &none  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &none  &none
-&none  &studio_unlock   &kp F1  &kp F2        &kp F3  &kp F10                                 &none  &none            &none              &none          &none  &none
-                                &kp LEFT_GUI  &none   &kp ESCAPE                              &none  &none            &none
+&none  &hold_reset 0 0  &kp F7  &kp F8           &kp F9        &kp F12  &bt BT_SEL 0  &bt BT_SEL 1  &none  &none            &none              &none          &none          &none
+&none  &hold_boot 0 0   &kp F4  &kp F5           &kp F6        &kp F11  &bt BT_SEL 2  &bt BT_CLR    &none  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI  &none
+&none  &studio_unlock   &kp F1  &kp F2           &kp F3        &kp F10                              &none  &none            &none              &none          &none          &none
+                                &rgb_ug RGB_TOG  &out OUT_TOG  &none                                &none  &none            &none
             >;
         };
     };
