@@ -27,7 +27,7 @@
             tapping-term-ms = <280>;
             flavor = "balanced";
             require-prior-idle-ms = <150>;
-            hold-trigger-key-positions = <1 2 3 4 5 15 16 17 18 19 29 30 31 32 33 40 42>;
+            hold-trigger-key-positions = <1 2 3 4 5 15 16 17 18 19 29 30 31 32 33 40 42 41>;
             quick-tap-ms = <175>;
             hold-trigger-on-release;
         };
@@ -126,9 +126,9 @@
         symbol {
             display-name = "SYM";
             bindings = <
-&none  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH              &kp DOLLAR      &none             &none  &none  &none              &kp AMPERSAND    &kp ASTERISK           &kp GRAVE          &kp TILDE     &none
+&none  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH              &kp DOLLAR      &none             &none  &none  &none              &kp AMPERSAND    &kp ASTERISK           &kp SINGLE_QUOTE   &kp GRAVE     &none
 &none  &kp EQUAL        &kp BACKSLASH  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp PERCENT       &none  &none  &kp CARET          &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp COLON     &none
-&none  &kp PLUS         &kp PIPE       &kp SINGLE_QUOTE      &kp MINUS       &kp LEFT_BRACKET                &kp RIGHT_BRACKET  &kp UNDERSCORE   &kp LESS_THAN          &kp GREATER_THAN   &kp QUESTION  &none
+&none  &kp PLUS         &kp PIPE       &kp TILDE             &kp MINUS       &kp LEFT_BRACKET                &kp RIGHT_BRACKET  &kp UNDERSCORE   &kp LESS_THAN          &kp GREATER_THAN   &kp QUESTION  &none
                                        &kp TAB               &kp SPACE       &kp ESCAPE                      &none              &none            &none
             >;
         };
