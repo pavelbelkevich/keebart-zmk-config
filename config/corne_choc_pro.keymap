@@ -116,30 +116,30 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-&none  &kp BACKSLASH  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &none  &none  &none  &none            &none              &none          &none          &none
-&none  &kp EQUAL      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp COMMA     &none  &none  &none  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI  &none
-&none  &kp PLUS       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS                   &none  &none            &none              &none          &none          &none
-                                    &kp DOT       &kp NUMBER_0  &kp ESCAPE                  &none  &none            &none
+&none  &kp SLASH  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &none  &none  &none  &none            &none              &none          &none          &none
+&none  &kp EQUAL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp COMMA     &none  &none  &none  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI  &none
+&none  &kp PLUS   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS                   &none  &none            &none              &none          &none          &none
+                                &kp DOT       &kp NUMBER_0  &kp ESCAPE                  &none  &none            &none
             >;
         };
 
         symbol {
             display-name = "SYM";
             bindings = <
-&none  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH              &kp DOLLAR      &none             &none  &none  &none              &kp AMPERSAND    &kp ASTERISK           &kp SINGLE_QUOTE   &kp GRAVE     &none
-&none  &kp EQUAL        &kp BACKSLASH  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp PERCENT       &none  &none  &kp CARET          &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp COLON     &none
-&none  &kp PLUS         &kp PIPE       &kp TILDE             &kp MINUS       &kp LEFT_BRACKET                &kp RIGHT_BRACKET  &kp UNDERSCORE   &kp LESS_THAN          &kp GREATER_THAN   &kp QUESTION  &none
-                                       &kp TAB               &kp SPACE       &kp ESCAPE                      &none              &none            &none
+&none  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH              &kp DOLLAR        &none        &none  &none  &none           &kp AMPERSAND      &kp ASTERISK           &kp SINGLE_QUOTE   &kp GRAVE     &none
+&none  &kp EQUAL        &kp BACKSLASH  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE    &kp PERCENT  &none  &none  &kp CARET       &kp RIGHT_BRACE    &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp COLON     &none
+&none  &kp PLUS         &kp PIPE       &kp TILDE             &kp LEFT_BRACKET  &kp MINUS                  &kp UNDERSCORE  &kp RIGHT_BRACKET  &kp LESS_THAN          &kp GREATER_THAN   &kp QUESTION  &none
+                                       &kp TAB               &kp SPACE         &kp ESCAPE                 &none           &none              &none
             >;
         };
 
         fun {
             display-name = "FUN";
             bindings = <
-&none  &hold_reset 0 0  &kp F7  &kp F8           &kp F9        &kp F12     &bt BT_SEL 0  &bt BT_SEL 1  &none  &none            &none              &none          &none          &none
-&none  &hold_boot 0 0   &kp F4  &kp F5           &kp F6        &kp F11     &bt BT_SEL 2  &bt BT_CLR    &none  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI  &none
-&none  &studio_unlock   &kp F1  &kp F2           &kp F3        &kp F10                                 &none  &none            &none              &none          &none          &none
-                                &rgb_ug RGB_TOG  &out OUT_TOG  &kp ESCAPE                              &none  &none            &none
+&none  &hold_reset 0 0  &kp F7  &kp F8           &kp F9        &kp F12     &bt BT_SEL 0  &bt BT_SEL 1  &none       &none            &none              &none          &none          &none
+&none  &hold_boot 0 0   &kp F4  &kp F5           &kp F6        &kp F11     &bt BT_SEL 2  &bt BT_SEL 3  &none       &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI  &none
+&none  &studio_unlock   &kp F1  &kp F2           &kp F3        &kp F10                                 &bt BT_CLR  &none            &none              &none          &none          &none
+                                &rgb_ug RGB_TOG  &out OUT_TOG  &kp ESCAPE                              &none       &none            &none
             >;
         };
     };
